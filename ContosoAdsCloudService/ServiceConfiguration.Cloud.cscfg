@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="ContosoAdsCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-01.2.3">
+  <Role name="ContosoAdsWeb">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=atsushikambaracontosoads;AccountKey=5J8LkwYl6TDM4hah4skw3QkwQIjKXyHS69KL6CgUmLp+a9f33VRZiIld6816U0hWddqru77wWCuYMwt890Ew5g==" />
+      <Setting name="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=atsushikambaracontosoads;AccountKey=5J8LkwYl6TDM4hah4skw3QkwQIjKXyHS69KL6CgUmLp+a9f33VRZiIld6816U0hWddqru77wWCuYMwt890Ew5g==" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="ContosoAdsWorker">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=atsushikambaracontosoads;AccountKey=5J8LkwYl6TDM4hah4skw3QkwQIjKXyHS69KL6CgUmLp+a9f33VRZiIld6816U0hWddqru77wWCuYMwt890Ew5g==" />
+      <Setting name="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=atsushikambaracontosoads;AccountKey=5J8LkwYl6TDM4hah4skw3QkwQIjKXyHS69KL6CgUmLp+a9f33VRZiIld6816U0hWddqru77wWCuYMwt890Ew5g==" />
+      <Setting name="ContosoAdsDbConnectionString" value="Server=tcp:pqv526m8ra.database.windows.net,1433;Database=contosoads;User ID=dbuser@pqv526m8ra;Password=zw9rIlH7zw3NZbn12V9GLlsrY5wUc4FH;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
